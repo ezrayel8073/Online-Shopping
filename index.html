@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Product Quantization</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #title
+            {
+                width: 100%;
+                height: 50px;
+                background-color: lightsteelblue;
+                border: 2px solid lightsteelblue;
+                color: red;
+                font-size:30px;
+                text-align: center;
+                margin-top: 0px;
+                font-weight: bold;
+            }
+            #menu
+            {
+                width: 100%;
+                height: 50px;
+                background-color: lightsteelblue;
+                border: 2px solid lightsteelblue;
+            }
+            ul li a{
+                list-style: none;
+                color: lightslategray;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+                text-transform:uppercase;
+            }
+            ul li{
+                list-style: none;
+                float: left;
+                width: 200px;
+                
+            }
+            #data
+            {
+                text-align: center;
+                width: 70%;
+                margin: 100px;
+                color: lightgoldenrodyellow;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            </style>
+    </head>
+    <body bgcolor="lightslategray">
+        <div id="title">Online Product Quantization</div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="userlogin.jsp">User Login</a></li>
+                <li><a href="register.jsp">Register</a></li>
+                <li><a href="adminlogin.jsp">Admin Login</a></li>
+            </ul>
+            
+        </div>
+        <div id="data">
+            <p align="justify">
+                Approximate nearest neighbor (ANN) search has achieved great success in many tasks.
+                However, existing popular methods for ANN search, such as hashing and quantization 
+                methods, are designed for static databases only. They cannot handle well the database 
+                with data distribution evolving dynamically, due to the high computational effort for 
+                retraining the model based on the new database. In this paper, we address the problem 
+                by developing an online product quantization (online PQ) model and incrementally updating
+                the quantization codebook that accommodates to the incoming streaming data. Moreover, to
+                further alleviate the issue of large scale computation for the online PQ update, 
+                we design two budget constraints for the model to update partial PQ codebook instead 
+                of all. We derive a loss bound which guarantees the performance of our online PQ model.
+                Furthermore, we develop an online PQ model over a sliding window with both data insertion
+                and deletion supported, to reflect the real-time behavior of the data. The experiments
+                demonstrate that our online PQ model is both time-efficient and effective for ANN search 
+                in dynamic large scale databases compared with baseline methods and the idea of partial
+                PQ codebook update further reduces the update cost.
+            </p>
+        </div>
+    </body>
+</html>
